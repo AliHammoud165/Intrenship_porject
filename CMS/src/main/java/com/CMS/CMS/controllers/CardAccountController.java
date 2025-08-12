@@ -1,8 +1,8 @@
 package com.CMS.CMS.controllers;
 
-import com.CMS.CMS.DTOs.CardAccountRequest;
-import com.CMS.CMS.Entities.CardAccount;
-import com.CMS.CMS.Services.CardAccountService;
+import com.CMS.CMS.dtos.CardAccountRequest;
+import com.CMS.CMS.models.CardAccount;
+import com.CMS.CMS.services.implementation.CardAccountServiceImplementation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +21,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 @Tag(name = "CardAccount", description = "API for linking cards to accounts")
 public class CardAccountController {
 
-    private final CardAccountService cardAccountService;
+    private final CardAccountServiceImplementation cardAccountServiceImplementation;
 
     @Operation(summary = "Create a new CardAccount link", description = "Links a card to an account")
     @ApiResponses(value = {
@@ -30,7 +30,7 @@ public class CardAccountController {
     })
     @PostMapping("/create")
     public ResponseEntity<String> createNewAccount(@RequestBody CardAccountRequest cardAccountRequest) {
-        return cardAccountService.createCardAccount(cardAccountRequest);
+        return cardAccountServiceImplementation.createCardAccount(cardAccountRequest);
     }
 
     @Operation(summary = "Get all CardAccount links by Card ID", description = "Returns all CardAccount mappings for a given card")
@@ -38,8 +38,19 @@ public class CardAccountController {
             @ApiResponse(responseCode = "200", description = "CardAccount list retrieved successfully"),
             @ApiResponse(responseCode = "404", description = "Card  not found")
     })
-    @GetMapping("/get_by_card_id")
-    public List<CardAccount> getByCardId(@RequestParam UUID id) {
-        return cardAccountService.getCardAccountbycardid(id);
+    @GetMapping("/get_by_card_id/{id}")
+    public List<CardAccount> getByCardId(@PathVariable UUID id) {
+        return cardAccountServiceImplementation.getCardAccountbycardid(id);
     }
+
+    @GetMapping("/all")
+    public List<CardAccount> getAllCardAccounts() {
+        return cardAccountServiceImplementation.getAllCardAccounts();
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<String> deleteCardAccount(@PathVariable UUID id) {
+        return cardAccountServiceImplementation.deleteCardAccount(id);
+    }
+
 }

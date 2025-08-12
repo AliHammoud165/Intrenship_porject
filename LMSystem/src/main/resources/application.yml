@@ -12,3 +12,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
+feign:
+  client:
+    cms:
+      url: http://localhost:8084/api/transaction
+    email:
+      url: http://localhost:8083/api/email

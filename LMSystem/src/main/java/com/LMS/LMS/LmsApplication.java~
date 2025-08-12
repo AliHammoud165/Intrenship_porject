@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableFeignClients(basePackages = "com.LMS.LMS.client")
+@EnableFeignClients(basePackages = "com.LMS.LMS.Client")
 public class LmsApplication {
 
 	public static void main(String[] args) {

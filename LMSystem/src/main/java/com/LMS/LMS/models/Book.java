@@ -5,6 +5,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.envers.Audited;
 
 import java.math.BigDecimal;
 import java.util.UUID;
@@ -17,6 +18,7 @@ import java.util.UUID;
 @Setter
 @Getter
 @Entity
+@Audited
 @Schema(name = "Book", description = "Represents a book in the library system")
 public class Book {
 

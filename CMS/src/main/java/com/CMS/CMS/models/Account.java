@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import org.hibernate.envers.Audited;
 
 
 @Schema(description = "Account entity representing a bank account with status, currency, and balance")
@@ -21,6 +22,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @Setter
 @Getter
 @Entity
+@Audited
 public class Account {
     @Id
     @GeneratedValue

@@ -5,6 +5,8 @@ import com.CMS.CMS.enums.TransactionType;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.envers.Audited;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -18,6 +20,7 @@ import java.util.UUID;
 @Setter
 @Getter
 @Entity
+@Audited
 public class Transaction {
     @Id
     @GeneratedValue

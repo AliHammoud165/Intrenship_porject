@@ -9,6 +9,7 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import org.hibernate.envers.Audited;
 
 @Schema(description = "Card entity containing card details and transactions")
 @Table(name = "card")
@@ -19,6 +20,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @Setter
 @Getter
 @Entity
+@Audited
 public class Card {
     @Id
     @GeneratedValue

@@ -6,6 +6,7 @@ import lombok.*;
 import java.util.UUID;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import org.hibernate.envers.Audited;
 
 @Schema(description = "Association entity linking a Card and an Account")
 @Table(name = "card_account")
@@ -16,6 +17,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 @Setter
 @Getter
 @Entity
+@Audited
 public class CardAccount {
 
     @Id

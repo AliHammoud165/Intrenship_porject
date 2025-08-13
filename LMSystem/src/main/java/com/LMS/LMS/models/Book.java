@@ -54,7 +54,7 @@ public class Book {
     private BigDecimal ratePrice;
 
     @ManyToOne
-    @JoinColumn(name = "authorid", nullable = false)
+    @JoinColumn(name = "authorid")
     @Schema(description = "Author of the book")
     private Author author;
 }

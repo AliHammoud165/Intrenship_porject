@@ -1,0 +1,76 @@
+2025-08-13 11:57:58.681 [http-nio-8082-exec-6] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:57:58.689 [http-nio-8082-exec-6] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:57:58.690 [http-nio-8082-exec-6] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:57:58.691 [http-nio-8082-exec-6] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:57:59.633 [http-nio-8082-exec-7] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:57:59.635 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:57:59.636 [http-nio-8082-exec-7] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:57:59.638 [http-nio-8082-exec-7] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:00.491 [http-nio-8082-exec-8] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:00.492 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:00.492 [http-nio-8082-exec-8] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:00.493 [http-nio-8082-exec-8] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:01.155 [http-nio-8082-exec-9] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:01.156 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:01.157 [http-nio-8082-exec-9] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:01.158 [http-nio-8082-exec-9] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:01.877 [http-nio-8082-exec-10] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:01.878 [http-nio-8082-exec-10] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:01.878 [http-nio-8082-exec-10] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:01.879 [http-nio-8082-exec-10] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:02.544 [http-nio-8082-exec-1] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:02.545 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:02.545 [http-nio-8082-exec-1] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:02.546 [http-nio-8082-exec-1] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:03.127 [http-nio-8082-exec-2] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:03.128 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:03.129 [http-nio-8082-exec-2] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:03.130 [http-nio-8082-exec-2] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:03.688 [http-nio-8082-exec-3] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:03.689 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:03.690 [http-nio-8082-exec-3] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:03.691 [http-nio-8082-exec-3] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:04.278 [http-nio-8082-exec-4] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:04.279 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:04.280 [http-nio-8082-exec-4] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:04.281 [http-nio-8082-exec-4] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:04.817 [http-nio-8082-exec-5] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:04.818 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:04.819 [http-nio-8082-exec-5] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:04.819 [http-nio-8082-exec-5] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:05.406 [http-nio-8082-exec-6] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:05.408 [http-nio-8082-exec-6] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:05.408 [http-nio-8082-exec-6] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:05.409 [http-nio-8082-exec-6] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:05.951 [http-nio-8082-exec-7] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:05.952 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:05.953 [http-nio-8082-exec-7] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:05.954 [http-nio-8082-exec-7] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:06.400 [http-nio-8082-exec-8] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:06.401 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:06.402 [http-nio-8082-exec-8] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:06.402 [http-nio-8082-exec-8] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:07.696 [http-nio-8082-exec-9] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:07.697 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:07.698 [http-nio-8082-exec-9] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:07.699 [http-nio-8082-exec-9] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:08.531 [http-nio-8082-exec-10] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:08.533 [http-nio-8082-exec-10] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:08.533 [http-nio-8082-exec-10] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:08.533 [http-nio-8082-exec-10] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:09.981 [http-nio-8082-exec-1] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:09.981 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:09.982 [http-nio-8082-exec-1] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:09.983 [http-nio-8082-exec-1] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:10.756 [http-nio-8082-exec-2] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:10.757 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:10.758 [http-nio-8082-exec-2] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:10.759 [http-nio-8082-exec-2] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:11.238 [http-nio-8082-exec-3] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:11.239 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:11.240 [http-nio-8082-exec-3] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:11.241 [http-nio-8082-exec-3] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully
+2025-08-13 11:58:12.435 [http-nio-8082-exec-4] INFO  c.L.L.s.i.AuthorServiceImplementation - Updating Author :AuthorUpdateRequest(name=any, id=291bbf39-7bdb-4f73-9f8b-1917673e662e)
+2025-08-13 11:58:12.435 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where a1_0.id=?
+2025-08-13 11:58:12.437 [http-nio-8082-exec-4] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with id '291bbf39-7bdb-4f73-9f8b-1917673e662e'  Not found)
+2025-08-13 11:58:12.438 [http-nio-8082-exec-4] INFO  c.L.L.s.i.AuthorServiceImplementation - Author with id  '291bbf39-7bdb-4f73-9f8b-1917673e662e' created successfully

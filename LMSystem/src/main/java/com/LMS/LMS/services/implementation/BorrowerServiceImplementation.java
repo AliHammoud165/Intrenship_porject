@@ -3,7 +3,9 @@ package com.LMS.LMS.services.implementation;
 import com.LMS.LMS.dtos.BorrowerRequest;
 import com.LMS.LMS.dtos.BorrowerUpdateRequest;
 import com.LMS.LMS.models.Borrower;
+import com.LMS.LMS.models.BorrowingTransactions;
 import com.LMS.LMS.repositories.BorrowerRepository;
+import com.LMS.LMS.repositories.BorrowingTransactionRepository;
 import com.LMS.LMS.services.inter.BorrowerService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -25,6 +27,7 @@ public class BorrowerServiceImplementation implements BorrowerService {
     private final ModelMapper modelMapper;
     private final BorrowerRepository borrowerRepository;
     private static final Logger logger = LoggerFactory.getLogger(BorrowerServiceImplementation.class);
+    private  final BorrowingTransactionRepository borrowingTransactionRepository;
 
     @Override
     public ResponseEntity<String> createBorrower(BorrowerRequest borrowerRequest) {
@@ -91,13 +94,24 @@ public class BorrowerServiceImplementation implements BorrowerService {
     public ResponseEntity<String> deleteBorrower(UUID id) {
         logger.info("Attempting to delete borrower with id: {}", id);
 
-        if (!borrowerRepository.existsById(id)) {
+        Optional<Borrower> borrowerOptional = borrowerRepository.findById(id);
+        if (borrowerOptional.isEmpty()) {
             logger.warn("Borrower with id {} not found", id);
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Borrower not found");
         }
 
+        Borrower borrower = borrowerOptional.get();
+
+        List<BorrowingTransactions> transactions = borrowingTransactionRepository.findAllByBorrowerId(borrower.getId());
+        if (!transactions.isEmpty()) {
+            borrowingTransactionRepository.deleteAll(transactions);
+            logger.info("Deleted {} transactions for borrower id {}", transactions.size(), borrower.getId());
+        }
+
         borrowerRepository.deleteById(id);
         logger.info("Borrower with id {} deleted successfully", id);
-        return ResponseEntity.status(HttpStatus.OK).body("Borrower deleted successfully");
+
+        return ResponseEntity.ok("Borrower and their transactions deleted successfully");
     }
+
 }

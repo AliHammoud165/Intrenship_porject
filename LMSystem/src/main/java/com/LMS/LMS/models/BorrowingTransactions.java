@@ -29,7 +29,7 @@ public class BorrowingTransactions {
     private UUID id;
 
     @ManyToOne
-    @JoinColumn(name = "book_id", nullable = false)
+    @JoinColumn(name = "book_id")
     @Schema(description = "Book being borrowed in this transaction")
     private Book book;
 

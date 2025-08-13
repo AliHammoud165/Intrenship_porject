@@ -16,4 +16,6 @@ public interface AuthorService {
     ResponseEntity<?> getAuthorById(UUID id);
 
     List<Author> getAllAuthors();
+
+    ResponseEntity<String> deleteAuthor(UUID id);
 }

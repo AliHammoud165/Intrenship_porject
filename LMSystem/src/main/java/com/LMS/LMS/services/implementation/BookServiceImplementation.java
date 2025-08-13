@@ -7,8 +7,10 @@ import com.LMS.LMS.dtos.BookUpdateRequest;
 import com.LMS.LMS.models.Author;
 import com.LMS.LMS.models.Book;
 import com.LMS.LMS.enums.CategoryType;
+import com.LMS.LMS.models.BorrowingTransactions;
 import com.LMS.LMS.repositories.AuthorRepository;
 import com.LMS.LMS.repositories.BookRepository;
+import com.LMS.LMS.repositories.BorrowingTransactionRepository;
 import com.LMS.LMS.services.inter.BookService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -30,6 +32,7 @@ public class BookServiceImplementation implements BookService {
     private final AuthorRepository authorRepository;
     private final AuthorServiceImplementation authorServiceImplementation;
     private final ModelMapper modelMapper;
+    private final BorrowingTransactionRepository borrowingTransactionRepository;
 
     private static final Logger logger =  LoggerFactory.getLogger(BookServiceImplementation.class);
 
@@ -120,14 +123,29 @@ public class BookServiceImplementation implements BookService {
     public ResponseEntity<String> deleteBook(UUID id) {
         logger.info("Attempting to delete book with id: {}", id);
 
-        if (!bookRepository.existsById(id)) {
+        Optional<Book> optionalBook = bookRepository.findById(id);
+        if (optionalBook.isEmpty()) {
             logger.warn("Book with id {} not found", id);
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Book not found");
         }
 
-        bookRepository.deleteById(id);
-        logger.info("Book with id {} deleted successfully", id);
-        return ResponseEntity.status(HttpStatus.OK).body("Book deleted successfully");
+        Book book = optionalBook.get();
+
+        List<BorrowingTransactions> transactions = borrowingTransactionRepository.findAllByBookId(id);
+        for (BorrowingTransactions transaction : transactions) {
+            transaction.setBook(null);
+        }
+        borrowingTransactionRepository.saveAll(transactions);
+
+        try {
+            bookRepository.deleteById(id);
+            logger.info("Book with id {} deleted successfully", id);
+            return ResponseEntity.ok("Book deleted successfully");
+        } catch (Exception e) {
+            logger.error("Error deleting book with id {}: {}", id, e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("Error deleting book");
+        }
     }
 
     @Override

@@ -14,4 +14,7 @@ public interface BorrowingTransactionRepository extends JpaRepository<BorrowingT
 
     List<BorrowingTransactions> findAllByBorrowerEmail(@Param("email") String email);
 
+    List<BorrowingTransactions> findAllByBookId(UUID bookId);
+
+    List<BorrowingTransactions> findAllByBorrowerId(UUID borrowerId);
 }

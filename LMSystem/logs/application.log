@@ -1,0 +1,209 @@
+2025-08-13 12:07:26.202 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:07:26.209 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-13 12:07:26.211 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-13 14:36:19.666 [main] INFO  com.LMS.LMS.LmsApplication - Starting LmsApplication using Java 17.0.16 with PID 11800 (C:\Users\Ali\Desktop\Intrenship_porject\LMSystem\target\classes started by Ali in C:\Users\Ali\Desktop\Intrenship_porject\LMSystem)
+2025-08-13 14:36:19.670 [main] DEBUG com.LMS.LMS.LmsApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2025-08-13 14:36:19.671 [main] INFO  com.LMS.LMS.LmsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-13 14:36:20.530 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13 14:36:20.673 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135 ms. Found 4 JPA repository interfaces.
+2025-08-13 14:36:20.837 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0960dfc6-beac-310b-a393-1fec2f540da9
+2025-08-13 14:36:21.183 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-08-13 14:36:21.263 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1533 ms
+2025-08-13 14:36:21.718 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2025-08-13 14:36:22.000 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13 14:36:22.302 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 14:36:22.832 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Borrower
+2025-08-13 14:36:22.833 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.BorrowingTransactions
+2025-08-13 14:36:22.836 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Author
+2025-08-13 14:36:22.837 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Book
+2025-08-13 14:36:23.873 [main] ERROR o.h.m.internal.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : org.hibernate.envers.DefaultRevisionEntity_#class_; expected type :  org.hibernate.metamodel.model.domain.internal.EntityTypeImpl; encountered type : jakarta.persistence.metamodel.MappedSuperclassType
+2025-08-13 14:36:24.026 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 14:36:24.222 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13 14:36:24.834 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 14:36:26.474 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-08-13 14:36:26.892 [main] INFO  com.LMS.LMS.LmsApplication - Started LmsApplication in 8.016 seconds (process running for 9.024)
+2025-08-13 14:36:53.514 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-13 14:36:53.516 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-08-13 14:36:53.560 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BorrowingTransactionServiceImplementation - Attempting to delete transaction with id: 0de2df5f-528b-4455-b1cd-998a2756e826
+2025-08-13 14:36:53.650 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - select count(*) from borrowing_transactions bt1_0 where bt1_0.id=?
+2025-08-13 14:36:53.662 [http-nio-8082-exec-2] WARN  c.L.L.s.i.BorrowingTransactionServiceImplementation - Transaction with id 0de2df5f-528b-4455-b1cd-998a2756e826 not found
+2025-08-13 14:36:55.064 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BorrowingTransactionServiceImplementation - Attempting to delete transaction with id: 0de2df5f-528b-4455-b1cd-998a2756e826
+2025-08-13 14:36:55.065 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - select count(*) from borrowing_transactions bt1_0 where bt1_0.id=?
+2025-08-13 14:36:55.066 [http-nio-8082-exec-3] WARN  c.L.L.s.i.BorrowingTransactionServiceImplementation - Transaction with id 0de2df5f-528b-4455-b1cd-998a2756e826 not found
+2025-08-13 14:36:56.181 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BorrowingTransactionServiceImplementation - Attempting to delete transaction with id: 0de2df5f-528b-4455-b1cd-998a2756e826
+2025-08-13 14:36:56.182 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select count(*) from borrowing_transactions bt1_0 where bt1_0.id=?
+2025-08-13 14:36:56.183 [http-nio-8082-exec-4] WARN  c.L.L.s.i.BorrowingTransactionServiceImplementation - Transaction with id 0de2df5f-528b-4455-b1cd-998a2756e826 not found
+2025-08-13 14:36:57.032 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BorrowingTransactionServiceImplementation - Attempting to delete transaction with id: 0de2df5f-528b-4455-b1cd-998a2756e826
+2025-08-13 14:36:57.033 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - select count(*) from borrowing_transactions bt1_0 where bt1_0.id=?
+2025-08-13 14:36:57.034 [http-nio-8082-exec-5] WARN  c.L.L.s.i.BorrowingTransactionServiceImplementation - Transaction with id 0de2df5f-528b-4455-b1cd-998a2756e826 not found
+2025-08-13 14:36:57.468 [http-nio-8082-exec-6] INFO  c.L.L.s.i.BorrowingTransactionServiceImplementation - Attempting to delete transaction with id: 0de2df5f-528b-4455-b1cd-998a2756e826
+2025-08-13 14:36:57.469 [http-nio-8082-exec-6] DEBUG org.hibernate.SQL - select count(*) from borrowing_transactions bt1_0 where bt1_0.id=?
+2025-08-13 14:36:57.470 [http-nio-8082-exec-6] WARN  c.L.L.s.i.BorrowingTransactionServiceImplementation - Transaction with id 0de2df5f-528b-4455-b1cd-998a2756e826 not found
+2025-08-13 14:37:00.656 [http-nio-8082-exec-7] INFO  c.L.L.s.i.BorrowingTransactionServiceImplementation - Attempting to delete transaction with id: 0de2df5f-528b-4455-b1cd-998a2756e826
+2025-08-13 14:37:00.657 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - select count(*) from borrowing_transactions bt1_0 where bt1_0.id=?
+2025-08-13 14:37:00.658 [http-nio-8082-exec-7] WARN  c.L.L.s.i.BorrowingTransactionServiceImplementation - Transaction with id 0de2df5f-528b-4455-b1cd-998a2756e826 not found
+2025-08-13 14:56:53.053 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 14:56:57.667 [main] INFO  com.LMS.LMS.LmsApplication - Starting LmsApplication using Java 17.0.16 with PID 1792 (C:\Users\Ali\Desktop\Intrenship_porject\LMSystem\target\classes started by Ali in C:\Users\Ali\Desktop\Intrenship_porject\LMSystem)
+2025-08-13 14:56:57.668 [main] DEBUG com.LMS.LMS.LmsApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2025-08-13 14:56:57.669 [main] INFO  com.LMS.LMS.LmsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-13 14:56:58.368 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13 14:56:58.497 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 122 ms. Found 4 JPA repository interfaces.
+2025-08-13 14:56:58.647 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0960dfc6-beac-310b-a393-1fec2f540da9
+2025-08-13 14:56:58.917 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-08-13 14:56:58.987 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1279 ms
+2025-08-13 14:56:59.295 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2025-08-13 14:56:59.483 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13 14:56:59.703 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 14:56:59.936 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Borrower
+2025-08-13 14:56:59.937 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.BorrowingTransactions
+2025-08-13 14:56:59.940 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Author
+2025-08-13 14:56:59.941 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Book
+2025-08-13 14:57:00.801 [main] ERROR o.h.m.internal.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : org.hibernate.envers.DefaultRevisionEntity_#class_; expected type :  org.hibernate.metamodel.model.domain.internal.EntityTypeImpl; encountered type : jakarta.persistence.metamodel.MappedSuperclassType
+2025-08-13 14:57:00.935 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 14:57:01.134 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13 14:57:01.704 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 14:57:02.702 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-08-13 14:57:03.064 [main] INFO  com.LMS.LMS.LmsApplication - Started LmsApplication in 6.253 seconds (process running for 7.127)
+2025-08-13 14:57:09.458 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-13 14:57:09.459 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-13 14:57:09.570 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title1
+2025-08-13 14:57:09.570 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 14:57:12.066 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 14:57:12.066 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 14:57:12.066 [http-nio-8082-exec-2] INFO  c.L.L.s.i.AuthorServiceImplementation - Creating Author :AuthorRequest(name=Orbis Publishing)
+2025-08-13 14:57:12.152 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 14:57:12.166 [http-nio-8082-exec-2] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with name 'Orbis Publishing' already exists
+2025-08-13 14:57:12.168 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 14:57:12.236 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - insert into book (authorid,availability,base_price,category,isbn,rate_price,title,id) values (?,?,?,?,?,?,?,?)
+2025-08-13 14:57:12.252 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - select nextval('revinfo_seq')
+2025-08-13 14:57:12.256 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - insert into revinfo (revtstmp,rev) values (?,?)
+2025-08-13 14:57:12.257 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - insert into book_aud (revtype,authorid,availability,base_price,category,isbn,rate_price,title,rev,id) values (?,?,?,?,?,?,?,?,?,?)
+2025-08-13 14:57:12.261 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title1' created successfully
+2025-08-13 14:57:51.576 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title1
+2025-08-13 14:57:51.577 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 14:57:52.874 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 14:57:52.875 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 14:57:52.875 [http-nio-8082-exec-3] INFO  c.L.L.s.i.AuthorServiceImplementation - Creating Author :AuthorRequest(name=Orbis Publishing)
+2025-08-13 14:57:52.877 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 14:57:52.880 [http-nio-8082-exec-3] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with name 'Orbis Publishing' already exists
+2025-08-13 14:57:52.882 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 14:57:52.885 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - insert into book (authorid,availability,base_price,category,isbn,rate_price,title,id) values (?,?,?,?,?,?,?,?)
+2025-08-13 14:57:52.887 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - insert into revinfo (revtstmp,rev) values (?,?)
+2025-08-13 14:57:52.889 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - insert into book_aud (revtype,authorid,availability,base_price,category,isbn,rate_price,title,rev,id) values (?,?,?,?,?,?,?,?,?,?)
+2025-08-13 14:57:52.896 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title1' created successfully
+2025-08-13 14:57:54.371 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title1
+2025-08-13 14:57:54.371 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 14:57:58.546 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 14:57:58.547 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 14:57:58.547 [http-nio-8082-exec-4] INFO  c.L.L.s.i.AuthorServiceImplementation - Creating Author :AuthorRequest(name=Orbis Publishing)
+2025-08-13 14:57:58.549 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 14:57:58.551 [http-nio-8082-exec-4] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with name 'Orbis Publishing' already exists
+2025-08-13 14:57:58.553 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 14:57:58.555 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - insert into book (authorid,availability,base_price,category,isbn,rate_price,title,id) values (?,?,?,?,?,?,?,?)
+2025-08-13 14:57:58.556 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - insert into revinfo (revtstmp,rev) values (?,?)
+2025-08-13 14:57:58.557 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - insert into book_aud (revtype,authorid,availability,base_price,category,isbn,rate_price,title,rev,id) values (?,?,?,?,?,?,?,?,?,?)
+2025-08-13 14:57:58.564 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title1' created successfully
+2025-08-13 15:07:12.554 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 15:07:16.054 [main] INFO  com.LMS.LMS.LmsApplication - Starting LmsApplication using Java 17.0.16 with PID 19052 (C:\Users\Ali\Desktop\Intrenship_porject\LMSystem\target\classes started by Ali in C:\Users\Ali\Desktop\Intrenship_porject\LMSystem)
+2025-08-13 15:07:16.055 [main] DEBUG com.LMS.LMS.LmsApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2025-08-13 15:07:16.056 [main] INFO  com.LMS.LMS.LmsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-13 15:07:16.773 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13 15:07:16.907 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128 ms. Found 4 JPA repository interfaces.
+2025-08-13 15:07:17.063 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0960dfc6-beac-310b-a393-1fec2f540da9
+2025-08-13 15:07:17.358 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-08-13 15:07:17.442 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1342 ms
+2025-08-13 15:07:17.755 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2025-08-13 15:07:17.955 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13 15:07:18.164 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 15:07:18.437 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Borrower
+2025-08-13 15:07:18.440 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.BorrowingTransactions
+2025-08-13 15:07:18.443 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Author
+2025-08-13 15:07:18.444 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Book
+2025-08-13 15:07:19.174 [main] ERROR o.h.m.internal.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : org.hibernate.envers.DefaultRevisionEntity_#class_; expected type :  org.hibernate.metamodel.model.domain.internal.EntityTypeImpl; encountered type : jakarta.persistence.metamodel.MappedSuperclassType
+2025-08-13 15:07:19.303 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 15:07:19.489 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13 15:07:20.017 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 15:07:21.305 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-08-13 15:07:21.759 [main] INFO  com.LMS.LMS.LmsApplication - Started LmsApplication in 6.534 seconds (process running for 7.326)
+2025-08-13 15:07:26.459 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-13 15:07:26.461 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-13 15:07:26.557 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title1
+2025-08-13 15:07:26.558 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:07:27.511 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:07:27.511 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:07:27.512 [http-nio-8082-exec-1] INFO  c.L.L.s.i.AuthorServiceImplementation - Creating Author :AuthorRequest(name=Orbis Publishing)
+2025-08-13 15:07:27.582 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 15:07:27.596 [http-nio-8082-exec-1] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with name 'Orbis Publishing' already exists
+2025-08-13 15:07:27.598 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 15:07:27.658 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - insert into book (authorid,availability,base_price,category,isbn,rate_price,title,id) values (?,?,?,?,?,?,?,?)
+2025-08-13 15:07:27.676 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select nextval('revinfo_seq')
+2025-08-13 15:07:27.680 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - insert into revinfo (revtstmp,rev) values (?,?)
+2025-08-13 15:07:27.681 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - insert into book_aud (revtype,authorid,availability,base_price,category,isbn,rate_price,title,rev,id) values (?,?,?,?,?,?,?,?,?,?)
+2025-08-13 15:07:27.691 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title1' created successfully
+2025-08-13 15:08:20.332 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title1
+2025-08-13 15:08:20.332 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:08:21.392 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title1
+2025-08-13 15:08:21.393 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:08:22.212 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:08:22.212 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:08:22.212 [http-nio-8082-exec-3] INFO  c.L.L.s.i.AuthorServiceImplementation - Creating Author :AuthorRequest(name=Orbis Publishing)
+2025-08-13 15:08:22.213 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 15:08:22.215 [http-nio-8082-exec-3] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with name 'Orbis Publishing' already exists
+2025-08-13 15:08:22.216 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 15:08:22.218 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - insert into book (authorid,availability,base_price,category,isbn,rate_price,title,id) values (?,?,?,?,?,?,?,?)
+2025-08-13 15:08:22.220 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - insert into revinfo (revtstmp,rev) values (?,?)
+2025-08-13 15:08:22.221 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - insert into book_aud (revtype,authorid,availability,base_price,category,isbn,rate_price,title,rev,id) values (?,?,?,?,?,?,?,?,?,?)
+2025-08-13 15:08:22.223 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title1' created successfully
+2025-08-13 15:08:25.643 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:08:25.644 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:08:25.644 [http-nio-8082-exec-5] INFO  c.L.L.s.i.AuthorServiceImplementation - Creating Author :AuthorRequest(name=Orbis Publishing)
+2025-08-13 15:08:25.646 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 15:08:25.647 [http-nio-8082-exec-5] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with name 'Orbis Publishing' already exists
+2025-08-13 15:08:25.649 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 15:08:25.652 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - insert into book (authorid,availability,base_price,category,isbn,rate_price,title,id) values (?,?,?,?,?,?,?,?)
+2025-08-13 15:08:25.654 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - insert into revinfo (revtstmp,rev) values (?,?)
+2025-08-13 15:08:25.655 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - insert into book_aud (revtype,authorid,availability,base_price,category,isbn,rate_price,title,rev,id) values (?,?,?,?,?,?,?,?,?,?)
+2025-08-13 15:08:25.662 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title1' created successfully
+2025-08-13 15:21:55.664 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 15:21:59.701 [main] INFO  com.LMS.LMS.LmsApplication - Starting LmsApplication using Java 17.0.16 with PID 10396 (C:\Users\Ali\Desktop\Intrenship_porject\LMSystem\target\classes started by Ali in C:\Users\Ali\Desktop\Intrenship_porject\LMSystem)
+2025-08-13 15:21:59.703 [main] DEBUG com.LMS.LMS.LmsApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2025-08-13 15:21:59.703 [main] INFO  com.LMS.LMS.LmsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-13 15:22:00.489 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13 15:22:00.634 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 138 ms. Found 4 JPA repository interfaces.
+2025-08-13 15:22:00.827 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0960dfc6-beac-310b-a393-1fec2f540da9
+2025-08-13 15:22:01.109 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-08-13 15:22:01.178 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1432 ms
+2025-08-13 15:22:01.485 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2025-08-13 15:22:01.684 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13 15:22:01.928 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 15:22:02.183 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Borrower
+2025-08-13 15:22:02.184 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.BorrowingTransactions
+2025-08-13 15:22:02.186 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Author
+2025-08-13 15:22:02.187 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Book
+2025-08-13 15:22:02.989 [main] ERROR o.h.m.internal.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : org.hibernate.envers.DefaultRevisionEntity_#class_; expected type :  org.hibernate.metamodel.model.domain.internal.EntityTypeImpl; encountered type : jakarta.persistence.metamodel.MappedSuperclassType
+2025-08-13 15:22:03.118 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 15:22:03.313 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13 15:22:03.940 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 15:22:04.806 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-08-13 15:22:05.152 [main] INFO  com.LMS.LMS.LmsApplication - Started LmsApplication in 6.295 seconds (process running for 7.17)
+2025-08-13 15:22:12.629 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-13 15:22:12.631 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-08-13 15:22:12.770 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title1
+2025-08-13 15:22:12.771 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:22:13.743 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:22:13.743 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:22:13.744 [http-nio-8082-exec-1] INFO  c.L.L.s.i.AuthorServiceImplementation - Creating Author :AuthorRequest(name=Orbis Publishing)
+2025-08-13 15:22:13.830 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 15:22:13.845 [http-nio-8082-exec-1] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with name 'Orbis Publishing' already exists
+2025-08-13 15:22:13.847 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select a1_0.id,a1_0.biography,a1_0.name from author a1_0 where lower(a1_0.name)=lower(?)
+2025-08-13 15:22:13.911 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - insert into book (authorid,availability,base_price,category,isbn,rate_price,title,id) values (?,?,?,?,?,?,?,?)
+2025-08-13 15:22:13.928 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select nextval('revinfo_seq')
+2025-08-13 15:22:13.932 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - insert into revinfo (revtstmp,rev) values (?,?)
+2025-08-13 15:22:13.934 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - insert into book_aud (revtype,authorid,availability,base_price,category,isbn,rate_price,title,rev,id) values (?,?,?,?,?,?,?,?,?,?)
+2025-08-13 15:22:13.945 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title1' created successfully
+2025-08-13 15:24:27.450 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 15:24:33.241 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 15:24:34.419 [main] ERROR o.h.m.internal.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : org.hibernate.envers.DefaultRevisionEntity_#class_; expected type :  org.hibernate.metamodel.model.domain.internal.EntityTypeImpl; encountered type : jakarta.persistence.metamodel.MappedSuperclassType
+2025-08-13 15:24:35.356 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 15:24:42.945 [http-nio-8082-exec-2] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with name 'Orbis Publishing' already exists
+2025-08-13 15:24:53.376 [http-nio-8082-exec-3] ERROR c.L.L.s.i.AuthorServiceImplementation - Author with name 'Orbis Publishing' already exists

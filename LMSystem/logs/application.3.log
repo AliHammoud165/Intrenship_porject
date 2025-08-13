@@ -1,0 +1,36 @@
+2025-08-13 11:56:16.161 [main] INFO  com.LMS.LMS.LmsApplication - Starting LmsApplication using Java 17.0.16 with PID 15780 (C:\Users\Ali\Desktop\Intrenship_porject\LMSystem\target\classes started by Ali in C:\Users\Ali\Desktop\Intrenship_porject\LMSystem)
+2025-08-13 11:56:16.184 [main] DEBUG com.LMS.LMS.LmsApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2025-08-13 11:56:16.185 [main] INFO  com.LMS.LMS.LmsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-13 11:56:16.916 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13 11:56:17.049 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 120 ms. Found 4 JPA repository interfaces.
+2025-08-13 11:56:17.222 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0960dfc6-beac-310b-a393-1fec2f540da9
+2025-08-13 11:56:17.484 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-08-13 11:56:17.492 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-08-13 11:56:17.494 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-13 11:56:17.494 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-08-13 11:56:17.563 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-13 11:56:17.564 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1334 ms
+2025-08-13 11:56:17.690 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13 11:56:17.765 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-08-13 11:56:17.794 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-13 11:56:17.879 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2025-08-13 11:56:18.085 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13 11:56:18.112 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-13 11:56:18.262 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3dd591b9
+2025-08-13 11:56:18.264 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-13 11:56:18.293 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 11:56:18.529 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Borrower
+2025-08-13 11:56:18.531 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.BorrowingTransactions
+2025-08-13 11:56:18.533 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Author
+2025-08-13 11:56:18.533 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.LMS.LMS.models.Book
+2025-08-13 11:56:19.298 [main] ERROR o.h.m.internal.MetadataContext - HHH015007: Illegal argument on static metamodel field injection : org.hibernate.envers.DefaultRevisionEntity_#class_; expected type :  org.hibernate.metamodel.model.domain.internal.EntityTypeImpl; encountered type : jakarta.persistence.metamodel.MappedSuperclassType
+2025-08-13 11:56:19.306 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13 11:56:19.427 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 11:56:19.619 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13 11:56:20.152 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 11:56:20.974 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-08-13 11:56:20.989 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-08-13 11:56:21.334 [main] INFO  com.LMS.LMS.LmsApplication - Started LmsApplication in 5.952 seconds (process running for 7.31)
+2025-08-13 11:56:48.276 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 11:56:48.278 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-13 11:56:48.280 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -3,7 +3,9 @@ package com.LMS.LMS.services.implementation;
 import com.LMS.LMS.dtos.AuthorRequest;
 import com.LMS.LMS.dtos.AuthorUpdateRequest;
 import com.LMS.LMS.models.Author;
+import com.LMS.LMS.models.Book;
 import com.LMS.LMS.repositories.AuthorRepository;
+import com.LMS.LMS.repositories.BookRepository;
 import com.LMS.LMS.services.inter.AuthorService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -24,7 +26,7 @@ public class AuthorServiceImplementation implements AuthorService {
     private  final AuthorRepository authorRepository;
     private final ModelMapper modelMapper;
     private static final Logger logger = LoggerFactory.getLogger(AuthorServiceImplementation.class);
-
+private final BookRepository bookRepository;
 
 
     @Override
@@ -84,16 +86,31 @@ public List<Author> getAllAuthors(){
         return authorRepository.findAll();
     }
 
-    public ResponseEntity<String> deleteAuthor(UUID id) {
-        logger.info("Attempting to delete author with id: {}", id);
+@Override
+public ResponseEntity<String> deleteAuthor(UUID id) {
+            Optional<Author> optionalAuthor = authorRepository.findById(id);
+            if (optionalAuthor.isEmpty()) {
+                logger.warn("Author with id {} not found", id);
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Author not found");
+            }
 
-        if (!authorRepository.existsById(id)) {
-            logger.warn("Author with id {} not found", id);
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Author not found");
+            Author author = optionalAuthor.get();
+
+            List<Book> books = bookRepository.searchByAuthorName(author.getName());
+            for (Book book : books) {
+                book.setAuthor(null);
+            }
+            bookRepository.saveAll(books);
+
+            try {
+                authorRepository.deleteById(id);
+                logger.info("Author with id {} deleted successfully", id);
+                return ResponseEntity.ok("Author deleted successfully");
+            } catch (Exception e) {
+                logger.error("Error deleting author with id {}: {}", id, e.getMessage());
+                return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                        .body("Error deleting author");
+            }
         }
 
-        authorRepository.deleteById(id);
-        logger.info("Author with id {} deleted successfully", id);
-        return ResponseEntity.status(HttpStatus.OK).body("Author deleted successfully");
     }
-}

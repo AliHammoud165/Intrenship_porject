@@ -19,3 +19,9 @@ feign:
       url: http://localhost:8084/api/transaction
     email:
       url: http://localhost:8083/api/email
+
+
+logging:
+  level:
+    root: WARN
+    com.yourpackage.books: INFO

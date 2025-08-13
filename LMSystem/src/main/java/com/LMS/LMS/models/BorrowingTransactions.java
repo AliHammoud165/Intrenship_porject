@@ -1,10 +1,7 @@
 package com.LMS.LMS.models;
 
 import com.LMS.LMS.enums.CurrencyType;
-<<<<<<< HEAD
 import io.swagger.v3.oas.annotations.media.Schema;
-=======
->>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
@@ -13,27 +10,19 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.UUID;
 
-<<<<<<< HEAD
 @Table(name = "borrowing_transactions")
-=======
-@Table(name="borrowing_transactions")
->>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-<<<<<<< HEAD
 @Schema(name = "BorrowingTransactions", description = "Represents a borrowing transaction between a borrower and the library")
-=======
->>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
 public class BorrowingTransactions {
 
     @Id
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
     @Column(name = "id", updatable = false, nullable = false)
-<<<<<<< HEAD
     @Schema(description = "Unique identifier of the borrowing transaction", example = "a3cbb2e4-7f16-4b1d-a23d-5a75f8b53c34")
     private UUID id;
 
@@ -70,26 +59,4 @@ public class BorrowingTransactions {
     @Column(name = "cardnb")
     @Schema(description = "Card number used in the transaction", example = "1234-5678-9012-3456")
     private String cardNb;
-=======
-    private UUID id;
-    @ManyToOne
-    @JoinColumn(name = "book_id", nullable = false)
-    private Book book;
-    @ManyToOne
-    @JoinColumn(name = "borrower_id", nullable = false)
-    private Borrower borrower;
-    @Column(name = "borrow_date")
-    private LocalDate borrowDate;
-    @Column(name = "return_date")
-    private LocalDate returnDate;
-    @Column(name = "status")
-    private String status;
-    @Column(name="currency")
-    private CurrencyType currencyType;
-    @Column(name="amount")
-    private BigDecimal amount;
-    @Column(name="cardnb")
-    private String cardNb;
-
->>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
 }

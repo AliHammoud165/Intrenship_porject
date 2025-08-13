@@ -2,7 +2,6 @@ package com.LMS.LMS.controllers;
 
 import com.LMS.LMS.dtos.BookRequest;
 import com.LMS.LMS.dtos.BookUpdateRequest;
-<<<<<<< HEAD
 import com.LMS.LMS.enums.CategoryType;
 import com.LMS.LMS.models.Book;
 import com.LMS.LMS.services.implementation.BookServiceImplementation;
@@ -13,11 +12,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
-=======
-import com.LMS.LMS.models.Book;
-import com.LMS.LMS.enums.CategoryType;
-import com.LMS.LMS.services.implementation.BookServiceImplementation;
->>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -28,14 +22,13 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/book")
 @RequiredArgsConstructor
-<<<<<<< HEAD
 @Tag(name = "Book", description = "API for managing books")
 public class BookController {
 
     private final BookServiceImplementation bookServiceImplementation;
 
     @Operation(summary = "Create a new book", description = "Create a book with the given details and associated author")
-    @ApiResponses(value = {
+    @ApiResponses({
             @ApiResponse(responseCode = "201", description = "Book created successfully"),
             @ApiResponse(responseCode = "403", description = "Missing title or ISBN"),
             @ApiResponse(responseCode = "400", description = "Invalid author ID or bad request")
@@ -48,7 +41,7 @@ public class BookController {
     }
 
     @Operation(summary = "Update an existing book", description = "Update book details by ID")
-    @ApiResponses(value = {
+    @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Book updated successfully"),
             @ApiResponse(responseCode = "404", description = "Book or Author not found"),
             @ApiResponse(responseCode = "400", description = "Bad request")
@@ -61,7 +54,7 @@ public class BookController {
     }
 
     @Operation(summary = "Get a book by ID", description = "Retrieve a single book by its UUID")
-    @ApiResponses(value = {
+    @ApiResponses({
             @ApiResponse(
                     responseCode = "200",
                     description = "Book retrieved",
@@ -77,7 +70,7 @@ public class BookController {
     }
 
     @Operation(summary = "Get books by ISBN", description = "Retrieve list of books by their ISBN number")
-    @ApiResponses(value = {
+    @ApiResponses({
             @ApiResponse(
                     responseCode = "200",
                     description = "Books retrieved",
@@ -104,7 +97,7 @@ public class BookController {
     }
 
     @Operation(summary = "Delete a book by ID", description = "Delete a book given its UUID")
-    @ApiResponses(value = {
+    @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Book deleted successfully"),
             @ApiResponse(responseCode = "404", description = "Book not found")
     })
@@ -153,49 +146,4 @@ public class BookController {
             @RequestParam String author) {
         return bookServiceImplementation.searchByAuthorName(author);
     }
-=======
-public class BookController {
-    private final BookServiceImplementation bookServiceImplementation;
-
-    @PostMapping("/create")
-    public ResponseEntity<String> createBook(@RequestBody BookRequest bookRequest){
-        return bookServiceImplementation.createBook(bookRequest);
-    }
-    @PutMapping("/update")
-    public ResponseEntity<String> updateBook( @RequestBody BookUpdateRequest bookUpdateRequest){
-        return bookServiceImplementation.updateBook(bookUpdateRequest);
-    }
-    @GetMapping ("/get/{id}")
-    public ResponseEntity<?> getBookById( @PathVariable UUID id){
-        return bookServiceImplementation.getBookById(id);
-    }
-    @GetMapping ("/get_isbn")
-    public ResponseEntity<?> getByISBN( @RequestParam String Isbn){
-        return bookServiceImplementation.getBookByISBN(Isbn);
-    }
-    @GetMapping ("/get_all")
-    public List<Book> getAllAuthors(){
-        return bookServiceImplementation.getAllBook();
-    }
-    @DeleteMapping ("/delete/{id}")
-    public ResponseEntity<String> deleteBookById( @PathVariable UUID id){
-        return bookServiceImplementation.deleteBook(id);
-    }
-
-    @GetMapping("/search/title")
-    public List<Book> searchByTitle(@RequestParam String title) {
-        return bookServiceImplementation.searchByTitle(title);
-    }
-
-    @GetMapping("/search/category")
-    public List<Book> searchByCategory(@RequestParam CategoryType category) {
-        return bookServiceImplementation.searchByCategory(category);
-    }
-
-    @GetMapping("/search/author")
-    public List<Book> searchByAuthor(@RequestParam String author) {
-        return bookServiceImplementation.searchByAuthorName(author);
-    }
-
->>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
 }

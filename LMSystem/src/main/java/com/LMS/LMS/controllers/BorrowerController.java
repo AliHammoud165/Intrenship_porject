@@ -4,6 +4,7 @@ import com.LMS.LMS.dtos.BorrowerRequest;
 import com.LMS.LMS.dtos.BorrowerUpdateRequest;
 import com.LMS.LMS.models.Borrower;
 import com.LMS.LMS.services.implementation.BorrowerServiceImplementation;
+<<<<<<< HEAD
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -11,6 +12,9 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
+=======
+import com.LMS.LMS.services.implementation.BorrowingTransactionServiceImplementation;
+>>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,6 +25,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/borrower")
 @RequiredArgsConstructor
+<<<<<<< HEAD
 @Tag(name = "Borrower", description = "API for managing borrowers")
 public class BorrowerController {
 
@@ -90,4 +95,30 @@ public class BorrowerController {
             @PathVariable UUID id) {
         return borrowerServiceImplementation.deleteBorrower(id);
     }
+=======
+public class BorrowerController {
+    private final BorrowerServiceImplementation borrowerServiceImplementation;
+
+    @PostMapping("/create")
+    public ResponseEntity<String> createBorrower(@RequestBody BorrowerRequest borrowerRequest){
+        return borrowerServiceImplementation.createBorrower(borrowerRequest);
+    }
+    @PutMapping("/update")
+    public ResponseEntity<String> updateBorrower( @RequestBody BorrowerUpdateRequest borrower){
+        return borrowerServiceImplementation.updateBorrower(borrower);
+    }
+    @GetMapping ("/get/{id}")
+    public ResponseEntity<?> getBorrowerById( @PathVariable UUID id){
+        return borrowerServiceImplementation.getBorrowerId(id);
+    }
+    @GetMapping ("/get_all")
+    public List<Borrower> getAllBorrower(){
+        return borrowerServiceImplementation.getAllBorrowers();
+    }
+    @DeleteMapping ("/delete/{id}")
+    public ResponseEntity<String> deleteBorrowerById( @PathVariable UUID id){
+        return borrowerServiceImplementation.deleteBorrower(id);
+    }
+
+>>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
 }

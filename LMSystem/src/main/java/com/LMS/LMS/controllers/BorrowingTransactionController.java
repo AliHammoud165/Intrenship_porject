@@ -2,6 +2,7 @@ package com.LMS.LMS.controllers;
 
 import com.LMS.LMS.dtos.BorrowingTransactionsBRequest;
 import com.LMS.LMS.dtos.BorrowingTransactionsRRequest;
+<<<<<<< HEAD
 import com.LMS.LMS.models.Book;
 import com.LMS.LMS.models.BorrowingTransactions;
 import com.LMS.LMS.services.implementation.BorrowingTransactionServiceImplementation;
@@ -12,6 +13,10 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
+=======
+import com.LMS.LMS.models.BorrowingTransactions;
+import com.LMS.LMS.services.implementation.BorrowingTransactionServiceImplementation;
+>>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +25,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
+<<<<<<< HEAD
 @RequestMapping("/api/transaction")
 @RequiredArgsConstructor
 @Tag(name = "Borrowing Transaction", description = "API for borrowing and returning books")
@@ -80,5 +86,28 @@ public class BorrowingTransactionController {
     @GetMapping("/all")
     public List<BorrowingTransactions> getAllTransactionsWithLogs() {
         return transactionService.getAllTransactionsWithLogs();
+=======
+@RequestMapping("/api/borrowing_transaction")
+@RequiredArgsConstructor
+public class BorrowingTransactionController {
+    private final BorrowingTransactionServiceImplementation borrowingTransactionServiceImplementation;
+
+    @PostMapping("/create")
+    public ResponseEntity<String> createBook(@RequestBody BorrowingTransactionsBRequest borrowingTransactionsRequest){
+        return borrowingTransactionServiceImplementation.createBorrowingTransaction(borrowingTransactionsRequest);
+    }
+    @PostMapping("/return")
+    public ResponseEntity<String> returnBorrowedBook(@RequestBody BorrowingTransactionsRRequest request) {
+        return borrowingTransactionServiceImplementation.returnBorrowedBook(request);
+    }
+    @GetMapping("/get_all")
+    public List<BorrowingTransactions> getAllTransactions() {
+        return borrowingTransactionServiceImplementation.getAllTransactionsWithLogs();
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<String> deleteTransaction(@PathVariable UUID id) {
+        return borrowingTransactionServiceImplementation.deleteTransactionById(id);
+>>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
     }
 }

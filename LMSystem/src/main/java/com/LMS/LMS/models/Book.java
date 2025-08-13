@@ -1,7 +1,10 @@
 package com.LMS.LMS.models;
 
 import com.LMS.LMS.enums.CategoryType;
+<<<<<<< HEAD
 import io.swagger.v3.oas.annotations.media.Schema;
+=======
+>>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
@@ -17,13 +20,18 @@ import java.util.UUID;
 @Setter
 @Getter
 @Entity
+<<<<<<< HEAD
 @Schema(name = "Book", description = "Represents a book in the library system")
 public class Book {
 
+=======
+public class Book {
+>>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
     @Id
     @GeneratedValue
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     @Column(name = "id", updatable = false, nullable = false)
+<<<<<<< HEAD
     @Schema(description = "Unique identifier of the book", example = "b3e1c3d4-1a2b-4c56-9d2f-8b4d5e6f7a8b")
     private UUID id;
 
@@ -54,5 +62,24 @@ public class Book {
     @ManyToOne
     @JoinColumn(name = "authorid", nullable = false)
     @Schema(description = "Author of the book")
+=======
+    private UUID id;
+    @Column(name = "title",nullable = false)
+    private String title;
+    @Column(name="isbn",nullable = false)
+    private  String isbn;
+    @Column(name="category",nullable = false)
+    private CategoryType category;
+    @Column(name = "availability",nullable = false)
+    private boolean available;
+    @Column(name = "base_price",nullable = false)
+    private BigDecimal basePrice;
+    @Column(name = "rate_price",nullable = false)
+    private BigDecimal ratePrice;
+
+
+    @ManyToOne
+    @JoinColumn(name = "authorid", nullable = false)
+>>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
     private Author author;
 }

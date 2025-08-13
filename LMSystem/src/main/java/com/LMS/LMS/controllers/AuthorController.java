@@ -4,11 +4,14 @@ import com.LMS.LMS.dtos.AuthorRequest;
 import com.LMS.LMS.dtos.AuthorUpdateRequest;
 import com.LMS.LMS.models.Author;
 import com.LMS.LMS.services.implementation.AuthorServiceImplementation;
+<<<<<<< HEAD
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.Parameter;
+=======
+>>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +22,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/author")
 @RequiredArgsConstructor
+<<<<<<< HEAD
 @Tag(name = "Author", description = "API for managing authors")
 public class AuthorController {
     private final AuthorServiceImplementation authorServiceImplementation;
@@ -60,10 +64,29 @@ public class AuthorController {
     @Operation(summary = "Get all authors", description = "Return a list of all authors")
     @ApiResponse(responseCode = "200", description = "List returned")
     @GetMapping("/get_all")
+=======
+public class AuthorController {
+    private final AuthorServiceImplementation authorServiceImplementation;
+
+    @PostMapping("/create")
+    public ResponseEntity<String> createAuthor( @RequestBody AuthorRequest  authorRequest){
+        return authorServiceImplementation.createAuthor(authorRequest);
+    }
+    @PutMapping ("/update")
+    public ResponseEntity<String> updateAuthor( @RequestBody AuthorUpdateRequest author){
+        return authorServiceImplementation.updateAuthor(author);
+    }
+    @GetMapping ("/get/{id}")
+    public ResponseEntity<?> getAuthorById( @PathVariable UUID id){
+        return authorServiceImplementation.getAuthorById(id);
+    }
+    @GetMapping ("/get_all")
+>>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
     public List<Author> getAllAuthors(){
         return authorServiceImplementation.getAllAuthors();
     }
 
+<<<<<<< HEAD
     @Operation(summary = "Delete author by ID", description = "Delete an author by UUID")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Author deleted successfully"),
@@ -75,4 +98,12 @@ public class AuthorController {
             @PathVariable UUID id){
         return authorServiceImplementation.deleteAuthor(id);
     }
+=======
+    @DeleteMapping ("/delete/{id}")
+    public ResponseEntity<String> deleteAuthorById( @PathVariable UUID id){
+        return authorServiceImplementation.deleteAuthor(id);
+    }
+
+
+>>>>>>> d599a845c61de5c926be53327c33faca6a6cf504
 }

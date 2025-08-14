@@ -11,6 +11,8 @@ import com.LMS.LMS.repositories.BookRepository;
 import com.LMS.LMS.repositories.BorrowerRepository;
 import com.LMS.LMS.repositories.BorrowingTransactionRepository;
 import com.LMS.LMS.services.inter.BorrowingTransactionService;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -30,6 +32,7 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class BorrowingTransactionServiceImplementation implements BorrowingTransactionService {
 
+    private final EmailProducerImplementation emailProducerImplementation;
     private final BorrowingTransactionRepository borrowingTransactionRepository;
     private final BookRepository bookRepository;
     private final BorrowerRepository borrowerRepository;
@@ -38,6 +41,8 @@ public class BorrowingTransactionServiceImplementation implements BorrowingTrans
     private final EmailClient emailClient;
     private final CMSClient cmsClient;
     private static final Logger logger = LoggerFactory.getLogger(BorrowingTransactionServiceImplementation.class);
+
+
 
     @Override
     public ResponseEntity<String> createBorrowingTransaction(BorrowingTransactionsBRequest request) {
@@ -155,10 +160,21 @@ public class BorrowingTransactionServiceImplementation implements BorrowingTrans
         logger.info("Fetching available books for ISBN: {}", isbn);
         return bookRepository.findByIsbnAndAvailableTrue(isbn);
     }
+//
+//    public void notifyUserByEmail(EmailRequest request) {
+//        String response = emailClient.sendEmail(request);
+//        logger.info("Email service response: {}", response);
+//    }
 
-    public void notifyUserByEmail(EmailRequest request) {
-        String response = emailClient.sendEmail(request);
-        logger.info("Email service response: {}", response);
+    public void notifyUserByEmail(EmailRequest emailRequest) {
+         ObjectMapper objectMapper = new ObjectMapper();
+
+        try {
+            String emailJson = objectMapper.writeValueAsString(emailRequest);
+            emailProducerImplementation.sendEmailRequest(emailJson);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
     }
 
     public void CMS(CMSRequest cmsRequest) {

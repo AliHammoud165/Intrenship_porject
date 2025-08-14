@@ -2,6 +2,7 @@ package com.EmailSendingMicroService.EmailSendingMicroService.services;
 
 import com.EmailSendingMicroService.EmailSendingMicroService.dtos.EmailRequest;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.mail.SimpleMailMessage;
@@ -16,16 +17,27 @@ public class EmailSendingService {
 
     private final JavaMailSender javaMailSender;
 
+    private final ModelMapper modelMapper;
+
+
     public void sendSimpleEmail(EmailRequest emailRequest) {
         logger.info("Preparing to send email to {}", emailRequest.getTo());
 
-        SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-        simpleMailMessage.setTo(emailRequest.getTo());
-        simpleMailMessage.setSubject(emailRequest.getSubject());
-        simpleMailMessage.setText(emailRequest.getText());
+        SimpleMailMessage mailMessage = modelMapper.map(emailRequest, SimpleMailMessage.class);
 
-        javaMailSender.send(simpleMailMessage);
-
-        logger.info("Email sent successfully to {}", emailRequest.getTo());
+        try {
+            javaMailSender.send(mailMessage);
+            logger.info("Email sent successfully to {}", emailRequest.getTo());
+        } catch (Exception e) {
+            logger.error("Failed to send email to {}", emailRequest.getTo(), e);
+            throw new EmailSendingException("Failed to send email to " + emailRequest.getTo(), e);
+        }
     }
+
+    public class EmailSendingException extends RuntimeException {
+        public EmailSendingException(String message, Throwable cause) {
+            super(message, cause);
+        }
+    }
+
 }

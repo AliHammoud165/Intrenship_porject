@@ -1,0 +1,69 @@
+2025-08-13 15:35:47.117 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:35:47.121 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:35:49.380 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:35:49.380 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:35:49.554 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully
+2025-08-13 15:36:12.506 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:36:12.506 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:36:13.604 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:36:13.604 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:36:13.612 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully
+2025-08-13 15:36:15.763 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:36:15.764 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:36:16.382 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:36:16.383 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:36:16.396 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully
+2025-08-13 15:36:17.517 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:36:17.518 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:36:20.058 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:36:20.058 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:36:20.067 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully
+2025-08-13 15:37:50.150 [http-nio-8082-exec-8] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:37:50.150 [http-nio-8082-exec-8] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:37:55.274 [http-nio-8082-exec-10] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:37:55.274 [http-nio-8082-exec-10] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:37:56.236 [http-nio-8082-exec-10] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:37:56.237 [http-nio-8082-exec-10] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:37:56.246 [http-nio-8082-exec-10] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully
+2025-08-13 15:37:56.849 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:37:56.849 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:37:57.689 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:37:57.689 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:37:57.702 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully
+2025-08-13 15:37:58.208 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:37:58.209 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:38:00.021 [http-nio-8082-exec-6] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:38:00.021 [http-nio-8082-exec-6] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:38:05.263 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:38:05.263 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:38:05.276 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully
+2025-08-13 15:38:05.353 [http-nio-8082-exec-9] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:38:05.353 [http-nio-8082-exec-9] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:38:05.845 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:38:05.845 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:38:08.080 [http-nio-8082-exec-9] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:38:08.081 [http-nio-8082-exec-9] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:38:08.095 [http-nio-8082-exec-9] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully
+2025-08-13 15:38:19.851 [http-nio-8082-exec-6] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:38:19.851 [http-nio-8082-exec-6] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:38:19.865 [http-nio-8082-exec-6] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully
+2025-08-13 15:38:33.468 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:38:33.468 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:38:35.492 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:38:35.492 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:38:36.156 [http-nio-8082-exec-7] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:38:36.156 [http-nio-8082-exec-7] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:38:38.684 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:38:38.684 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:38:38.698 [http-nio-8082-exec-1] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully
+2025-08-13 15:38:39.833 [http-nio-8082-exec-7] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:38:39.834 [http-nio-8082-exec-7] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:38:39.847 [http-nio-8082-exec-7] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully
+2025-08-13 15:38:43.841 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:38:43.842 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:38:43.854 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully
+2025-08-13 15:38:45.724 [http-nio-8082-exec-9] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2
+2025-08-13 15:38:45.724 [http-nio-8082-exec-9] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
+2025-08-13 15:38:48.018 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
+2025-08-13 15:38:48.019 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
+2025-08-13 15:38:48.031 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2Title12222dfghjkl2' created successfully

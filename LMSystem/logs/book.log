@@ -1,10 +1,35 @@
-2025-08-13 15:24:39.673 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title1
-2025-08-13 15:24:39.674 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
-2025-08-13 15:24:42.864 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
-2025-08-13 15:24:42.864 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
-2025-08-13 15:24:43.147 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title1' created successfully
-2025-08-13 15:24:49.164 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title1
-2025-08-13 15:24:49.170 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 0600563111
-2025-08-13 15:24:53.373 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 0600563111
-2025-08-13 15:24:53.374 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Orbis Publishing' for the book
-2025-08-13 15:24:53.383 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title1' created successfully
+2025-08-14 11:59:51.071 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title
+2025-08-14 11:59:51.079 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 9781406354065
+2025-08-14 11:59:52.201 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 9781406354065
+2025-08-14 11:59:52.202 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Walker Books' for the book
+2025-08-14 11:59:52.470 [http-nio-8082-exec-2] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title' created successfully
+2025-08-14 12:00:41.880 [http-nio-8082-exec-10] INFO  c.L.L.s.i.BookServiceImplementation - Updating book with id: 3b2d8124-f692-4aa4-9034-fe0fd26d8d6c
+2025-08-14 12:00:41.902 [http-nio-8082-exec-10] INFO  c.L.L.s.i.BookServiceImplementation - Book with id '3b2d8124-f692-4aa4-9034-fe0fd26d8d6c' updated successfully
+2025-08-14 12:04:44.240 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title
+2025-08-14 12:04:44.240 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 9781406354065
+2025-08-14 12:04:45.326 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 9781406354065
+2025-08-14 12:04:45.326 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Walker Books' for the book
+2025-08-14 12:04:45.426 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title' created successfully
+2025-08-14 12:04:46.669 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title
+2025-08-14 12:04:46.669 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 9781406354065
+2025-08-14 12:04:47.425 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 9781406354065
+2025-08-14 12:04:47.425 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Walker Books' for the book
+2025-08-14 12:04:47.436 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title' created successfully
+2025-08-14 12:04:57.497 [http-nio-8082-exec-7] INFO  c.L.L.s.i.BookServiceImplementation - Updating book with id: 3ff16e1c-6160-43dd-9b5f-40c4757223b0
+2025-08-14 12:04:57.516 [http-nio-8082-exec-7] INFO  c.L.L.s.i.BookServiceImplementation - Book with id '3ff16e1c-6160-43dd-9b5f-40c4757223b0' updated successfully
+2025-08-14 12:06:44.582 [http-nio-8082-exec-10] INFO  c.L.L.s.i.BookServiceImplementation - Updating book with id: 17e583f8-fbce-4735-a351-e0de13db9684
+2025-08-14 12:06:44.595 [http-nio-8082-exec-10] INFO  c.L.L.s.i.BookServiceImplementation - Book with id '17e583f8-fbce-4735-a351-e0de13db9684' updated successfully
+2025-08-14 12:11:10.543 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title
+2025-08-14 12:11:10.543 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 9781406354065
+2025-08-14 12:11:11.386 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 9781406354065
+2025-08-14 12:11:11.386 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Walker Books' for the book
+2025-08-14 12:11:11.402 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title' created successfully
+2025-08-14 12:11:17.980 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Updating book with id: 74af3a78-c33b-4974-904a-6cdf7297c1c4
+2025-08-14 12:11:17.984 [http-nio-8082-exec-5] INFO  c.L.L.s.i.BookServiceImplementation - Book with id '74af3a78-c33b-4974-904a-6cdf7297c1c4' updated successfully
+2025-08-14 12:20:03.969 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Creating book with title: Title
+2025-08-14 12:20:03.969 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Getting authors for book with ISBN: 9781406354065
+2025-08-14 12:20:05.338 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Authors retrieved successfully for ISBN: 9781406354065
+2025-08-14 12:20:05.338 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Creating author 'Walker Books' for the book
+2025-08-14 12:20:05.426 [http-nio-8082-exec-3] INFO  c.L.L.s.i.BookServiceImplementation - Book 'Title' created successfully
+2025-08-14 12:20:10.198 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Updating book with id: c915b4ed-da45-494d-94a1-30d9059c7742
+2025-08-14 12:20:10.219 [http-nio-8082-exec-4] INFO  c.L.L.s.i.BookServiceImplementation - Book with id 'c915b4ed-da45-494d-94a1-30d9059c7742' updated successfully
